@@ -4,6 +4,9 @@ The `vault-init` service automates the process of [initializing](https://www.vau
 
 After `vault-init` initializes a Vault server it stores master keys and root tokens, encrypted using [Google Cloud KMS](https://cloud.google.com/kms), to a user defined [Google Cloud Storage](https://cloud.google.com/storage) bucket.
 
+## Attribution
+Pulled directly from Seth Vargo's repo to fix certificate issue
+
 ## Usage
 
 The `vault-init` service is designed to be run alongside a Vault server and
