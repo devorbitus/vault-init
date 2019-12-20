@@ -1,4 +1,4 @@
-module github.com/sethvargo/vault-init
+module github.com/devorbitus/vault-init
 
 go 1.13
 
