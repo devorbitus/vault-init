@@ -17,7 +17,6 @@ RUN go build \
   -o /bin/vault-init \
   .
 
-FROM scratch
-ADD https://curl.haxx.se/ca/cacert.pem /etc/ssl/certs/ca-certificates.crt
+FROM centurylink/ca-certs
 COPY --from=builder /bin/vault-init /
 CMD ["/vault-init"]
